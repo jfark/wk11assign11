@@ -1,3 +1,39 @@
+body {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+}
+
+body, h1, h2{
+	padding: 0px;
+	margin: 0px;
+}
+
+header{
+	background: black;
+	text-align: left;
+	padding: 15px 10px 30px 30px;
+}
+
+header, .splash, .splash a {
+	color: white;
+}
+
 .splash {
 	background-image: url(images/purple-bg.jpeg);
+	padding: 100px;
+}
+
+.splash h2 {
+	font-size: 85px;
+	padding-bottom: 40px;
+}
+
+.splash a {
+	padding: 15px 20px;
+	text-decoration: none;
+	border: 3px white solid;
+}
+
+.work ul{
+	list-style-type: none;
 }
