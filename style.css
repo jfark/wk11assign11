@@ -1,6 +1,8 @@
 body {
 	font-family: Helvetica, sans-serif;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 body, h1, h2{
@@ -52,5 +54,19 @@ header, .splash, .splash a {
 }
 .work ul {
 	list-style-type: none;
+}
+
+.workfigs img {
+	max-width: 300px;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+.workfigs figure {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	
 }
 
