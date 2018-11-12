@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: Helvetica, sans-serif;
 }
@@ -7,13 +9,17 @@ body, h1, h2, figcaption {
 	margin: 0px;
 }
 
-header{
+header {
 	background: black;
 	text-align: left;
 	padding: 15px 10px 30px 30px;
 	position: fixed;
 	z-index: 100;
 	width: 100%;
+}
+
+.fas fa-bars {
+	float: right;
 }
 
 header, .splash, .splash a {
@@ -87,6 +93,7 @@ header, .splash, .splash a {
 }
 
 .table figure {
+	display: block;
 	margin: 0px;
 	padding: 0px;
 	position: relative;
@@ -99,11 +106,13 @@ header, .splash, .splash a {
 
 figcaption {
 	position: absolute;
-	bottom: 50%;
-	right: 33%;
 	font-size: 25px;
 	font-weight: bold;
-	color: black;
+	color: white;
+	top: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 figure a:hover {
