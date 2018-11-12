@@ -40,6 +40,11 @@ header, .splash, .splash a {
 	border: 3px white solid;
 }
 
+.splash a:hover {
+	color: black;
+	background-color: white;
+}
+
 .about {
 	text-align: left;
 	padding: 75px 30px 30px 30px;
@@ -64,6 +69,7 @@ header, .splash, .splash a {
 .table {
 	display: flex;
 	flex-direction: row;
+	padding-bottom: 40px;
 }
 
 .column1 {
@@ -78,32 +84,30 @@ header, .splash, .splash a {
 
 .table img {
 	max-width: 100%;
-
 }
 
 .table figure {
 	margin: 0px;
 	padding: 0px;
 	position: relative;
+	opacity: 0.25;	
+}
+
+.table figure:hover {
+	opacity: 1;
 }
 
 figcaption {
 	position: absolute;
-	bottom: 45%;
-	left: 30%;
+	bottom: 50%;
+	right: 33%;
 	font-size: 25px;
 	font-weight: bold;
-}
-
-figure a {
-	padding:
-	background: white;
-	opacity: 0.25;
+	color: black;
 }
 
 figure a:hover {
 	background: none;
-	color: white;
 	opacity: 1;
 }
 
