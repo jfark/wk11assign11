@@ -49,8 +49,6 @@ header, .splash, .splash a {
 }
 
 .work {
-	display: flex;
-	flex-direction: column;
 	padding: 0px 30px;
 	position: center;
 }
@@ -60,31 +58,27 @@ header, .splash, .splash a {
 	text-align: left;
 }
 
-.workfigs img {
-	display: inline-block;
+.table {
+	display: flex;
+	flex-direction: row;
+}
+
+.column1 {
+	
 	max-width: 50%;
-	padding: 0px;
-	margin: 0px;
 }
 
-.workfigs figure {
-	padding: 0px;
-	margin: 0px;
-	position: relative;
+.column2 {
+	max-width: 50%;
 }
 
-figcaption {
-	position: absolute;
-	bottom: 0px;
-	background-color: white;
-	color: black;
-	border: 1px solid red;
-	
-	font-size: 20px;
-	font-weight: bold;
-	opacity: 0.5;
-	
-	
+.table img {
+	max-width: 100%;
+}
+
+.table figure {
+	margin: 0px;
+	padding: 0px;
 }
 
 footer {
