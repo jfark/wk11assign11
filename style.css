@@ -1,128 +1,83 @@
+html {
+	box-sizing: border-box;
+}
 
+*, *before, *after {
+	box-sizing: inherit;
+}
 
 body {
 	font-family: Helvetica, sans-serif;
+	padding-top: 3em;
 }
 
-body, h1, h2, figcaption {
-	padding: 0px;
-	margin: 0px;
+h1, h2, h3, a {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+img {
+	max-width: 100%;
 }
 
 header {
 	background: black;
-	text-align: left;
-	padding: 15px 10px 30px 30px;
+	color: white;
 	position: fixed;
-	z-index: 100;
 	width: 100%;
+	top: 0em;
+	left: 0em; 
 }
 
-.fas fa-bars {
-	float: right;
+header h1 {
+	margin: 0;
+	padding: 1em;
 }
-
-header, .splash, .splash a {
-	color: white;
-}
-
-.splash, .splash a {
-	text-align: center;
-}
-
-.splash {
-	background-image: url(images/purple-bg.jpeg);
-	padding: 115px 100px 100px 100px;
-}
-
-.splash h2 {
-	font-size: 85px;
-	padding-bottom: 50px;
-}
-
-.splash a {
-	padding: 15px 20px;
-	text-decoration: none;
-	border: 3px white solid;
-}
-
-.splash a:hover {
-	color: black;
-	background-color: white;
-}
-
-.about {
-	text-align: left;
-	padding: 75px 30px 30px 30px;
-	border-bottom: 1px #ccc solid;
-}
-
-.about p {
-	font-size: 24px;
-	line-height: 1.5em;
-}
-
-.work {
-	padding: 0px 30px;
-	
-}
-
-.work h2 {
-	padding: 30px 0px;
-	text-align: left;
-}
-
-.table {
-	display: flex;
-	flex-direction: row;
-	padding-bottom: 40px;
-}
-
-.column1 {
-	max-width: 50%;
-	margin: 0px 1.5px 0px 0px;
-}
-
-.column2 {
-	max-width: 50%;
-	margin: 0px 0px 0px 1.5px;
-}
-
-.table img {
-	max-width: 100%;
-}
-
-.table figure {
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	position: relative;
-	opacity: 0.25;	
-}
-
-.table figure:hover {
-	opacity: 1;
-}
-
-figcaption {
+nav {
 	position: absolute;
-	font-size: 25px;
-	font-weight: bold;
-	color: white;
+	top: 1em;
+	right: 1em;
+}
+section {
+	padding: 1em;
+	border-bottom: 1px solid #ddd;
+}
+.splash {
+	padding: 0;
+	position: relative;
+	margin: 0;
+}
+.splash-bg {
+	position: relative;
+	z-index: -10;
+	width: 100%;
+	display: block;
+}
+
+.splash-content {
+	position: absolute;
 	top: 50%;
-	right: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	line-height: 1;
+	color: white;
+}
+.splash-content h2 {
+	font-size: 3em;
+	margin-top: 0;
 }
 
-figure a:hover {
-	background: none;
-	opacity: 1;
+.splash-content a {
+	border: 0.125em solid white;
+	font-size: 1.25em;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
 }
-
-footer {
-	text-align: center;
-	border-top: 1px solid #ccc;
-	font-size: 25px;
+.splash-content a:hover {
+	color: black;
+	background: white;
 }
 
